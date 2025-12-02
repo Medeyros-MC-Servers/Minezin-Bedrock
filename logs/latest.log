@@ -1,0 +1,19 @@
+[21:10:04.396 main/INFO] Starting MCXboxBroadcast Standalone build 116 (git-master-bf3718f) for Bedrock 1.21.124 (860)
+[21:10:05.511 main/INFO] [Primary Session] Starting SessionManager...
+[21:10:05.533 main/INFO] [Auth] Getting device code for MSA login...
+[21:10:05.882 main/INFO] [Auth] Got MSA device code, expires: 2025-12-02T21:25:05.878Z[Etc/UTC]
+[21:10:05.882 main/INFO] [Auth] To sign in, use a web browser to open the page https://www.microsoft.com/link and enter the code TQXJ3AJC to authenticate.
+[21:10:05.882 main/INFO] [Auth] Waiting for MSA login via device code...
+[21:11:12.458 main/INFO] [Auth] Got MSA Token, expires: 2025-12-03T21:11:12.458Z[Etc/UTC]
+[21:11:12.458 main/INFO] [Auth] Authenticating device with Xbox Live...
+[21:11:12.681 main/INFO] [Auth] Got XBL Device Token, expires: 2025-12-16T21:11:12.668Z[Etc/UTC]
+[21:11:12.681 main/INFO] [Auth] Authenticating with Xbox Live using SISU...
+[21:11:12.918 main/INFO] [Auth] Got XBL User+Title+XSTS Token, expires: 2025-12-03T13:11:12.906Z[Etc/UTC]
+[21:11:14.102 main/INFO] [Primary Session] Successfully authenticated as mnznBedrock (2535421839456920) with 0/2000 friends
+[21:11:14.348 main/INFO] [Primary Session] Creating Xbox LIVE session...
+[21:11:15.489 main/INFO] [Primary Session] Creation of Xbox LIVE session was successful!
+[21:11:15.490 main/INFO] [Primary Session] Player history is being initialized for the first time, this may take a few seconds
+[21:11:46.119 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:12:16.642 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:12:47.211 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:13:17.488 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
