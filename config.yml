@@ -16,8 +16,8 @@ session:
 
   # The data to broadcast over xbox live, this is the default if querying is enabled
   session-info:
-    host-name: "Geyser Test Server"
-    world-name: "\u00A7aGeyserMC \u00A7bDemo \u00A7f& \u00A7cTest \u00A7fServer"
+    host-name: "Minezin Bedrock"
+    world-name: "Minezin Bedrock"
     players: 0
     max-players: 20
     ip: 127.0.0.1
