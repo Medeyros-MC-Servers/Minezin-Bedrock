@@ -1,35 +1,532 @@
-[21:10:04.396 main/INFO] Starting MCXboxBroadcast Standalone build 116 (git-master-bf3718f) for Bedrock 1.21.124 (860)
-[21:10:05.511 main/INFO] [Primary Session] Starting SessionManager...
-[21:10:05.533 main/INFO] [Auth] Getting device code for MSA login...
-[21:10:05.882 main/INFO] [Auth] Got MSA device code, expires: 2025-12-02T21:25:05.878Z[Etc/UTC]
-[21:10:05.882 main/INFO] [Auth] To sign in, use a web browser to open the page https://www.microsoft.com/link and enter the code TQXJ3AJC to authenticate.
-[21:10:05.882 main/INFO] [Auth] Waiting for MSA login via device code...
-[21:11:12.458 main/INFO] [Auth] Got MSA Token, expires: 2025-12-03T21:11:12.458Z[Etc/UTC]
-[21:11:12.458 main/INFO] [Auth] Authenticating device with Xbox Live...
-[21:11:12.681 main/INFO] [Auth] Got XBL Device Token, expires: 2025-12-16T21:11:12.668Z[Etc/UTC]
-[21:11:12.681 main/INFO] [Auth] Authenticating with Xbox Live using SISU...
-[21:11:12.918 main/INFO] [Auth] Got XBL User+Title+XSTS Token, expires: 2025-12-03T13:11:12.906Z[Etc/UTC]
-[21:11:14.102 main/INFO] [Primary Session] Successfully authenticated as mnznBedrock (2535421839456920) with 0/2000 friends
-[21:11:14.348 main/INFO] [Primary Session] Creating Xbox LIVE session...
-[21:11:15.489 main/INFO] [Primary Session] Creation of Xbox LIVE session was successful!
-[21:11:15.490 main/INFO] [Primary Session] Player history is being initialized for the first time, this may take a few seconds
-[21:11:46.119 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:12:16.642 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:12:47.211 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:13:17.488 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:13:47.745 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:14:18.249 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:14:48.503 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:15:18.860 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:15:49.103 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:16:19.377 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:16:49.596 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:17:19.926 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:17:50.465 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:18:20.743 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:18:51.199 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:19:21.504 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:19:51.722 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:20:21.964 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:20:52.195 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
-[21:21:22.508 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:24:45.840 main/INFO] Starting MCXboxBroadcast Standalone build 116 (git-master-bf3718f) for Bedrock 1.21.124 (860)
+[21:24:47.828 main/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) [MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.main(StandaloneMain.java:89) [MCXboxBroadcastStandalone.jar:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.lang.Thread.run(Thread.java:1583) ~[?:?]
+[21:24:47.837 main/INFO] [Primary Session] Starting SessionManager...
+[21:24:49.047 main/INFO] [Primary Session] Successfully authenticated as mnznBedrock (2535421839456920) with 0/2000 friends
+[21:24:49.166 main/INFO] [Primary Session] Creating Xbox LIVE session...
+[21:24:50.331 main/INFO] [Primary Session] Creation of Xbox LIVE session was successful!
+[21:25:21.836 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:25:21.992 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:25:53.497 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:25:54.576 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:26:26.081 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:26:26.247 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:26:50.979 MCXboxBroadcast Thread-1/INFO] [Primary Session] Added Medeyros12 (2535427255531553) as a friend
+[21:26:57.751 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:26:58.158 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:27:09.365 MCXboxBroadcast Thread-1/INFO] [Primary Session] Transferred bedrock client Medeyros12 (2535427255531553) to target server.
+[21:27:29.661 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:27:30.077 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:28:01.581 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:28:01.722 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:28:33.226 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:28:33.398 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:29:04.901 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:29:05.073 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:29:36.576 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:29:36.742 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:30:08.245 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:30:08.460 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:30:39.964 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:30:40.113 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:31:11.616 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:31:12.208 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:31:43.712 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:31:43.860 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:32:15.364 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:32:15.772 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:32:47.276 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:32:47.687 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:33:19.191 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:33:19.349 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:33:50.852 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:33:51.263 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:34:22.766 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:34:23.178 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:34:54.683 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:34:54.901 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:35:26.405 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:35:26.524 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:35:58.027 MCXboxBroadcast Thread-1/ERROR] [Primary Session] Failed to ping server
+java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException
+	at io.netty.util.concurrent.DefaultPromise.get(DefaultPromise.java:351) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.updateSessionInfo(StandaloneMain.java:134) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.bootstrap.standalone.StandaloneMain.lambda$createSession$0(StandaloneMain.java:114) ~[MCXboxBroadcastStandalone.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572) ~[?:?]
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358) ~[?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[?:?]
+	at java.lang.Thread.run(Thread.java:1583) [?:?]
+Caused by: java.util.concurrent.TimeoutException
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.onTimeout(ClientPingHandler.java:36) ~[MCXboxBroadcastStandalone.jar:?]
+	at com.rtm516.mcxboxbroadcast.core.ping.ClientPingHandler.lambda$handlerAdded$0(ClientPingHandler.java:41) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:153) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.runTask(AbstractEventExecutor.java:173) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:166) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:470) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:569) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[MCXboxBroadcastStandalone.jar:?]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[MCXboxBroadcastStandalone.jar:?]
+	... 1 more
+[21:35:58.502 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:36:28.924 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:36:52.454 MCXboxBroadcast Thread-1/INFO] [Primary Session] Transferred bedrock client Medeyros12 (2535427255531553) to target server.
+[21:36:59.349 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
+[21:37:29.761 MCXboxBroadcast Thread-1/INFO] [Primary Session] Updated session!
