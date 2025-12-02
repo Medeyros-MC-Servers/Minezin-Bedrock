@@ -1,0 +1,40 @@
+2025-12-02 20:24:48 [main] INFO - §aWelcome! Please choose a language first!
+2025-12-02 20:24:48 [main] INFO - eng => English
+2025-12-02 20:24:48 [main] INFO - chs => 中文（简体）
+2025-12-02 20:24:48 [main] INFO - cht => 中文（繁體）
+2025-12-02 20:24:48 [main] INFO - jpn => 日本語
+2025-12-02 20:24:48 [main] INFO - rus => Pyccĸий
+2025-12-02 20:24:48 [main] INFO - spa => Español
+2025-12-02 20:24:48 [main] INFO - pol => Polish
+2025-12-02 20:24:48 [main] INFO - bra => Português-Brasil
+2025-12-02 20:24:48 [main] INFO - kor => 한국어
+2025-12-02 20:24:48 [main] INFO - ukr => Українська
+2025-12-02 20:24:48 [main] INFO - deu => Deutsch
+2025-12-02 20:24:48 [main] INFO - ltu => Lietuviškai
+2025-12-02 20:24:48 [main] INFO - idn => Indonesia
+2025-12-02 20:24:48 [main] INFO - cze => Czech
+2025-12-02 20:24:48 [main] INFO - tur => Turkish
+2025-12-02 20:24:48 [main] INFO - fin => Suomi
+2025-12-02 20:24:48 [main] INFO - vie => Vietnamese
+2025-12-02 20:24:48 [main] INFO - fra => Français
+2025-12-02 20:25:06 [main] INFO - Loading §apnx.yml§r...
+2025-12-02 20:25:06 [main] INFO - Selecionado Português (bra) como a linguagem base
+2025-12-02 20:25:06 [main] INFO - Iniciando Servidor de Minecraft: BE, versão §bv1.21.124§r
+2025-12-02 20:25:06 [main] INFO - Selected Zlib provider: 3 (cn.nukkit.compression.LibDeflateThreadLocal)
+2025-12-02 20:25:06 [main] INFO - Este servidor está rodando PowerNukkitX versão §e2.0.0-SNAPSHOT§r (§egit-1495044§r)§r (API 2.0.0)
+2025-12-02 20:25:06 [main] INFO - PowerNukkitX é distribuído com a licença LGPL
+2025-12-02 20:25:09 [main] INFO - Loading recipes...
+2025-12-02 20:25:09 [main] INFO - Loaded 3735 recipes.
+2025-12-02 20:25:09 [main] INFO - Carregado com sucesso 0 pacotes de recurso
+2025-12-02 20:25:09 [main] INFO - Ativando PowerNukkitX v2.0.0-SNAPSHOT
+2025-12-02 20:25:09 [main] WARN - Mundo "world" não encontrado
+2025-12-02 20:25:09 [main] INFO - Preparando mundo "§aworld§r"
+2025-12-02 20:25:09 [main] INFO - O carregamento está completo para o nível "§aworld§r"
+2025-12-02 20:25:09 [main] INFO - Preparando mundo "§aworld§r"
+2025-12-02 20:25:09 [main] INFO - O carregamento está completo para o nível "§aworld_the_nether§r"
+2025-12-02 20:25:09 [main] INFO - Preparando mundo "§aworld§r"
+2025-12-02 20:25:09 [main] INFO - O carregamento está completo para o nível "§aworld_the_end§r"
+2025-12-02 20:25:09 [main] WARN - Failed to copy spark: [java.base/java.util.Objects.requireNonNull(Objects.java:233), java.base/java.nio.file.Files.copy(Files.java:3121), cn.nukkit.utils.SparkInstaller.initSpark(SparkInstaller.java:31), cn.nukkit.Server.<init>(Server.java:538), cn.nukkit.Nukkit.main(Nukkit.java:158), cn.nukkit.JarStart.main(JarStart.java:20)]
+2025-12-02 20:25:09 [main] INFO - Modo de jogo padrão: Modo Sobrevivência
+2025-12-02 20:25:09 [main] INFO - Abrindo servidor em §e0.0.0.0:§e19132
+2025-12-02 20:25:09 [main] INFO - Finalizado (21.236s)! Para ver a ajuda, escreva "help" ou "?
