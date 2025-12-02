@@ -20,7 +20,7 @@ session:
     world-name: "Minezin Bedrock"
     players: 0
     max-players: 20
-    ip: 127.0.0.1
+    ip: 0.0.0.0
     port: 19132
 
 # Friend/follower list sync settings
